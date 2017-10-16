@@ -12,15 +12,16 @@
 // to use call(), apply() and bind()
 
 
-
 // function keyword
 // function name
-// executor expression
+// executor arguments
 // function body
+// function return
 function test(a, b) {
     console.log('function executed...');
     return 123;
 }
+
 var result = test();
 console.log(result);
 
@@ -61,3 +62,58 @@ console.log(typeof fn);
 console.log("#######################") 
 console.log("Anonymous functions")
 console.log("#######################")
+
+
+// question round
+// 1.
+function fn() {
+    return 1;
+}
+function fn() {
+    return 2;
+}
+var result = fn();
+console.log(result);
+
+// 2.
+var fn = function() {
+    return 3;
+}
+var result = fn();
+console.log(result);
+
+// 3. 
+var func = function() {
+    return 4;
+}
+var result = fn();
+console.log(result); //3
+
+// 4.
+function func2 (a, b) {
+    var a = 'rudra';
+    var b, c, d, e;
+    console.log(a);
+    document.write(a);
+    return undefined;
+}
+func2(10);
+var result = func2(20);
+console.log(result);
+
+
+// example 1
+function sumOf2Numbers (a, b) {
+    var result = a + b;
+    return result;
+}
+var a = 10;
+var b = 20;
+var resultOfSum = sumOf2Numbers(a, b);
+console.log(resultOfSum);
+
+// example 2
+function sumOf10And20 () {
+    return 10 + 20;
+}
+console.log(sumOf10And20());
