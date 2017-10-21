@@ -33,7 +33,6 @@ console.log("######### iife example 2 ###########");
     }
     test();
 
-
     console.log('world');
     console.log(a);
 
