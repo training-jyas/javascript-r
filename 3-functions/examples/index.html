@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function Demo</title>
+</head>
+<body>
+    <input type="number" id="first"/>
+    <input type="number" id="last"/>
+    <button onclick="add()">+</button>
+    <button onclick="name1()">=</button>
+    <p id="demo"></p>
+    <script>
+        function add() {
+            var a = Number(document.getElementById("first").value);
+            var b = Number(document.getElementById("last").value);
+            return c = a + b;
+        }
+        
+        function name1(){
+           document.getElementById("demo").innerHTML = add();
+        }
+    </script>
+</body>
+</html>
