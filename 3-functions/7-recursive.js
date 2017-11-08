@@ -26,6 +26,7 @@
             return s;
         }
     };
+    
     console.log(fibboRecursive(10));
 
     // recursive example
@@ -38,12 +39,12 @@
             print(num + 1);
         }
     }
-    print(1);
+    // print(1);
 
     function print2() {
         for (var i = 1; i <= 10; i++) {
             console.log(i);
         }
     }
-    print2();
+    // print2();
 })();
